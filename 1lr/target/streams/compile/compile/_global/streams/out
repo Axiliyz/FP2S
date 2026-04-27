@@ -1,0 +1,5 @@
+[error] -- [E008] Not Found Error: C:\Users\Axiliyz\Desktop\2 семак\2 семак\1lr\src\main\scala\postoffice\App.scala:127:10 
+[error] 127 |    Monad.whenM[IO](st.issuedParcels.nonEmpty)(
+[error]     |    ^^^^^^^^^^^
+[error]     |    value whenM is not a member of object monads.Monad
+[error] one error found
