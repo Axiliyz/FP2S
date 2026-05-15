@@ -89,11 +89,8 @@ object PostOfficeState:
 trait MenuOption:
   def show: String
 
-// Абстракция взаимодействия с пользователем через IO.
-// handleUserAnswer — обработать ввод и вернуть следующее состояние.
-// userInteractionLoop — полный цикл: показать меню, прочитать ввод, обработать, повторить.
+// Абстракция запускаемого интерактивного цикла.
 trait UserInteraction:
-  def handleUserAnswer(answer: String): IO[Unit]
   def userInteractionLoop: IO[Unit]
 
 // Extension-методы для Parcel — добавлены снаружи без наследования.

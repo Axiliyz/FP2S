@@ -8,4 +8,3 @@ trait LogAlgebra[F[_]]:
   def logRejection(recipient: String, weightKg: Double, reason: String): F[Unit]
   def logStorageCharge(parcelId: ParcelId, days: Int, cost: Double): F[Unit]
   def logIssuance(parcel: Parcel, dayIssued: Int): F[Unit]
-  def getLog: F[Vector[String]]

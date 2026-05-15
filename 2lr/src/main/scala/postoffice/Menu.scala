@@ -13,9 +13,6 @@ trait UserInteraction[F[_]]:
 final case class MenuLeaf[F[_]](title: String, action: F[Unit]) extends MenuOption:
   def show: String = title
 
-// titleF — эффект, вычисляющий заголовок меню перед каждым показом.
-// Это позволяет заголовку отражать актуальное состояние (день, выручку и т.д.)
-// без того чтобы MenuTreeNode знал о StateAlgebra.
 final case class MenuTreeNode[F[_]: Monad](
   titleF:   F[String],
   children: Seq[MenuOption],
