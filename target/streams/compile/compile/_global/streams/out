@@ -1,0 +1,114 @@
+[error] -- [E032] Syntax Error: C:\Users\Axiliyz\Desktop\FP2S\2lr\src\main\scala\postoffice\Program.scala:38:53 
+[error] 38 |      pkgPair           <- cfg.packageClass(weightKg)
+[error]    |                                                     ^
+[error]    |                                                     pattern expected
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E007] Type Mismatch Error: C:\Users\Axiliyz\Desktop\FP2S\2lr\src\main\scala\postoffice\Program.scala:40:0 
+[error] 40 |      val (pkgCls, pkgRule) = pkgPair
+[error]    |                                     ^
+[error]    |Found:    Null
+[error]    |Required: ?{ withFilter: ? }
+[error]    |Note that implicit conversions were not tried because the result of an implicit conversion
+[error]    |must be more specific than ?{ withFilter: [applied to (
+[error]    |  x$1 =>
+[error]    |    x$1 @unchecked match 
+[error]    |      {
+[error]    |        case null => true
+[error]    |        case _ => false
+[error]    |      }
+[error]    |) returning ?{ flatMap: [applied to (
+[error]    |  x$1 =>
+[error]    |    x$1 match 
+[error]    |      {
+[error]    |        case null =>
+[error]    |          state.nextId.flatMap(
+[error]    |            parcelId =>
+[error]    |              state.currentDay.map(
+[error]    |                day =>
+[error]    |                  {
+[error]    |                    val parcel =
+[error]    |                      Parcel(parcelId, sender, recipient, weightKg, pkgCls,
+[error]    |                        pkgRule, day)
+[error]    |                    (day, parcel)
+[error]    |                  }
+[error]    |              ).flatMap(
+[error]    |                x$1 =>
+[error]    |                  x$1 @unchecked match 
+[error]    |                    {
+[error]    |                      case (day, parcel) =>
+[error]    |                        state.acceptParcel(parcel, cost).flatMap(
+[error]    |                          x$1 =>
+[error]    |                            x$1 match 
+[error]    |                              {
+[error]    |                                case _ =>
+[error]    |                                  log.logTariffCalc(weightKg, cost).flatMap(
+[error]    |                                    x$1 =>
+[error]    |                                      x$1 match 
+[error]    |                                        {
+[error]    |                                          case _ =>
+[error]    |                                            log.logAcceptance(parcel, cost).
+[error]    |                                              flatMap(
+[error]    |                                              x$1 =>
+[error]    |                                                x$1 match 
+[error]    |                                                  {
+[error]    |                                                    case _ =>
+[error]    |                                                      console.putStrLn(
+[error]    |                                                        s"
+[error]    |                                                          \n                            |============== RECEIPT ================\n                            |Parcel #
+[error]    |                                                            {
+[error]    |                                                            {
+[error]    |                                                              parcelId.value
+[error]    |                                                            }
+[error]    |                                                          }
+[error]    |                                                          \n                            |Sender:
+[error]    |                                                            {sender}
+[error]    |                                                          \n                            |Recipient:
+[error]    |                                                            {recipient}
+[error]    |                                                          \n                            |Weight:
+[error]    |                                                            {weightKg}
+[error]    |                                                           kg\n                            |Class:
+[error]    |                                                            {
+[error]    |                                                            {
+[error]    |                                                              pkgCls.label
+[error]    |                                                            }
+[error]    |                                                          }
+[error]    |                                                          \n                            |Packaging:
+[error]    |                                                            {
+[error]    |                                                            {
+[error]    |                                                              pkgRule.
+[error]    |                                                                description
+[error]    |                                                            }
+[error]    |                                                          }
+[error]    |                                                          \n                            |Cost:
+[error]    |                                                            {
+[error]    |                                                            {
+[error]    |                                                              "%.2f".format(cost
+[error]    |                                                                )
+[error]    |                                                            }
+[error]    |                                                          }
+[error]    |                                                           rub.\n                            |Accepted day:
+[error]    |                                                            {day}
+[error]    |                                                          \n                            |=======================================\n                            |
+[error]    |                                                          ".stripMargin
+[error]    |                                                      ).map(
+[error]    |                                                        x$1 =>
+[error]    |                                                          x$1 match 
+[error]    |                                                            {
+[error]    |                                                              case _ => ()
+[error]    |                                                            }
+[error]    |                                                      )
+[error]    |                                                  }
+[error]    |                                            )
+[error]    |                                        }
+[error]    |                                  )
+[error]    |                              }
+[error]    |                        )
+[error]    |                    }
+[error]    |              )
+[error]    |          )
+[error]    |      }
+[error]    |) returning F[Unit]] }] }
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] two errors found

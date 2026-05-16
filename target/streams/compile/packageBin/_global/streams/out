@@ -1,0 +1,149 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\postoffice-tagless-final_3-0.1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\algebras[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\algebras[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\algebras\ConfigAlgebra.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\algebras\ConfigAlgebra.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\algebras\ConfigAlgebra.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\algebras\ConfigAlgebra.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\algebras\ConsoleAlgebra.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\algebras\ConsoleAlgebra.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\algebras\ConsoleAlgebra.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\algebras\ConsoleAlgebra.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\algebras\LogAlgebra.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\algebras\LogAlgebra.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\algebras\LogAlgebra.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\algebras\LogAlgebra.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\algebras\StateAlgebra.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\algebras\StateAlgebra.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\algebras\StateAlgebra.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\algebras\StateAlgebra.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Algebras$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Algebras$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Algebras.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Algebras.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Algebras.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Algebras.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\ConfigInterpreter.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\ConfigInterpreter.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\ConfigInterpreter.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\ConfigInterpreter.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Domain$package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Domain$package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Domain$package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Domain$package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Domain$package.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Domain$package.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Interpreters$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Interpreters$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Interpreters$package$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Interpreters$package$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Interpreters$package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Interpreters$package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Interpreters$package$given_Monad_IO$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Interpreters$package$given_Monad_IO$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Interpreters$package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Interpreters$package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Interpreters$package.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Interpreters$package.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Interpreters.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Interpreters.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Interpreters.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Interpreters.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\LogInterpreter.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\LogInterpreter.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\LogInterpreter.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\LogInterpreter.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Main.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Main.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\MenuLeaf$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\MenuLeaf$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\MenuLeaf.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\MenuLeaf.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\MenuLeaf.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\MenuLeaf.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\MenuOption.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\MenuOption.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\MenuOption.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\MenuOption.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\MenuTreeNode$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\MenuTreeNode$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\MenuTreeNode.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\MenuTreeNode.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\MenuTreeNode.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\MenuTreeNode.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Monad$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Monad$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Monad.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Monad.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Monad.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Monad.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\PackageClass$$anon$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\PackageClass$$anon$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\PackageClass$$anon$5.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\PackageClass$$anon$5.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\PackageClass$$anon$6.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\PackageClass$$anon$6.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\PackageClass$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\PackageClass$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\PackageClass.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\PackageClass.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\PackageClass.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\PackageClass.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\PackagingRule$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\PackagingRule$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\PackagingRule$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\PackagingRule$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\PackagingRule$$anon$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\PackagingRule$$anon$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\PackagingRule$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\PackagingRule$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\PackagingRule.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\PackagingRule.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\PackagingRule.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\PackagingRule.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Parcel$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Parcel$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Parcel.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Parcel.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Parcel.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Parcel.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\ParcelId$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\ParcelId$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\ParcelId.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\ParcelId.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\ParcelId.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\ParcelId.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\PostConfig$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\PostConfig$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\PostConfig.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\PostConfig.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\PostConfig.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\PostConfig.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\PostState$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\PostState$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\PostState.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\PostState.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\PostState.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\PostState.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Program$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Program$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Program.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Program.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\Program.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\Program.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\StateInterpreter.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\StateInterpreter.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\StateInterpreter.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\StateInterpreter.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\UserInteraction.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\UserInteraction.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	postoffice\UserInteraction.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Axiliyz\Desktop\2 семак\2 семак\2lr\target\scala-3.3.3\classes\postoffice\UserInteraction.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

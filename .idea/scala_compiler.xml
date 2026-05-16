@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <profile name="sbt 1" modules="2lr_8236,2lr_8236.main,2lr_8236.test" />
+  </component>
+</project>
