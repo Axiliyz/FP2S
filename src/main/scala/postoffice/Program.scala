@@ -2,6 +2,7 @@ package postoffice
 
 import postoffice.Monad.*
 import postoffice.algebras.*
+import postoffice.{PostError, renderError}
 
 object Program:
 
@@ -20,8 +21,9 @@ object Program:
       ok        <- cfg.canAccept(weight)
       _         <- if ok then acceptValid(sender, recipient, weight)
                    else
+                     val err = PostError.WeightExceedsMax(weight)
                      log.logRejection(recipient, weight, "weight exceeds maximum") >>
-                     console.putStrLn(s"Rejected: weight $weight kg exceeds maximum.")
+                     console.putStrLn(renderError(err))
     yield ()
 
   private def acceptValid[F[_]](
@@ -46,6 +48,7 @@ object Program:
       _             <- state.acceptParcel(parcel, cost)
       _             <- log.logTariffCalc(weightKg, cost)
       _             <- log.logAcceptance(parcel, cost)
+      _             <- printLogs
       _             <- console.putStrLn(
                          s"""
                             |============== RECEIPT ================
@@ -86,11 +89,15 @@ object Program:
       idStr <- console.putStr("Parcel ID to issue: ") >> console.readLine
       day   <- state.currentDay
       _     <- idStr.trim.toIntOption match
-                 case None => console.putStrLn(s"Invalid ID: '$idStr'.")
+                 case None =>
+                   val err = PostError.InvalidInput(idStr)
+                   console.putStrLn(renderError(err))
                  case Some(n) =>
                    val pid = ParcelId(n)
                    parcels.find(_.id == pid) match
-                     case None => console.putStrLn(s"Parcel #$n not found.")
+                     case None =>
+                       val err = PostError.ParcelNotFound(n)
+                       console.putStrLn(renderError(err))
                      case Some(parcel) =>
                        val days = parcel.storedDays(day)
                        for
@@ -98,6 +105,7 @@ object Program:
                          _          <- state.pickupParcel(pid, storageFee)
                          _          <- log.logStorageCharge(pid, days, storageFee)
                          _          <- log.logIssuance(parcel, day)
+                         _          <- printLogs
                          _          <- console.putStrLn(
                                          s"""
                                             |=========== ISSUE RECEIPT =============
@@ -142,6 +150,14 @@ object Program:
       parcels <- state.allParcels
     yield s"Post Office Day $day | Revenue: ${"%.2f".format(revenue)} rub. | Stored: ${parcels.size}"
 
+  private def printLogs[F[_]](using log: LogAlgebra[F], console: ConsoleAlgebra[F])(using Monad[F]): F[Unit] =
+    for
+      lines <- log.take
+      _     <- lines.foldLeft(Monad[F].pure(())) { (acc, line) =>
+                 acc >> console.putStrLn(line)
+               }
+    yield ()
+
   def buildMenu[F[_]](using
     cfg:     ConfigAlgebra[F],
     state:   StateAlgebra[F],
@@ -152,10 +168,10 @@ object Program:
     MenuTreeNode[F](
       titleF = statusTitle[F],
       children = Seq(
-        MenuLeaf("Accept parcel", acceptFlow),
-        MenuLeaf("Issue parcel",  pickupFlow),
-        MenuLeaf("Next day",      nextDayFlow),
-        MenuLeaf("Show summary",  summaryFlow),
+        MenuLeaf("Accept parcel", () => acceptFlow),
+        MenuLeaf("Issue parcel",  () => pickupFlow),
+        MenuLeaf("Next day",      () => nextDayFlow),
+        MenuLeaf("Show summary",  () => summaryFlow),
       ),
     )
 

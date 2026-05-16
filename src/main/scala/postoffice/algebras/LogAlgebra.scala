@@ -3,6 +3,9 @@ package postoffice.algebras
 import postoffice.{Parcel, ParcelId}
 
 trait LogAlgebra[F[_]]:
+  def add(message: String): F[Unit]
+  def take: F[List[String]]
+
   def logAcceptance(parcel: Parcel, cost: Double): F[Unit]
   def logTariffCalc(weightKg: Double, cost: Double): F[Unit]
   def logRejection(recipient: String, weightKg: Double, reason: String): F[Unit]

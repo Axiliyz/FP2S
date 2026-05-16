@@ -1,36 +1,6 @@
 [debug] [zinc] IncrementalCompile -----------
 [debug] IncrementalCompile.incrementalCompile
-[debug] previous = Stamps for: 50 products, 15 sources, 5 libraries
-[debug] current source = Set(${BASE}/src/main/scala/postoffice/interpreters/ConfigInterpreter.scala, ${BASE}/src/main/scala/postoffice/interpreters/IdSourceInterpreter.scala, ${BASE}/src/main/scala/postoffice/interpreters/AppF.scala, ${BASE}/src/main/scala/postoffice/Main.scala, ${BASE}/src/main/scala/postoffice/Monad.scala, ${BASE}/src/main/scala/postoffice/Domain.scala, ${BASE}/src/main/scala/postoffice/Menu.scala, ${BASE}/src/main/scala/postoffice/interpreters/Interpreters.scala, ${BASE}/MacroApp (1).scala, ${BASE}/src/main/scala/postoffice/algebras/StateAlgebra.scala, ${BASE}/src/main/scala/postoffice/interpreters/StateInterpreter.scala, ${BASE}/src/main/scala/postoffice/algebras/LogAlgebra.scala, ${BASE}/src/main/scala/postoffice/Program.scala, ${BASE}/src/main/scala/postoffice/algebras/IdSourceAlgebra.scala, ${BASE}/src/main/scala/postoffice/interpreters/LogInterpreter.scala, ${BASE}/src/main/scala/postoffice/interpreters/ConsoleInterpreter.scala, ${BASE}/src/main/scala/postoffice/algebras/ConfigAlgebra.scala, ${BASE}/src/main/scala/postoffice/algebras/ConsoleAlgebra.scala)
-[debug] > initialChanges = InitialChanges(Changes(added = Set(${BASE}/MacroApp (1).scala, ${BASE}/src/main/scala/postoffice/interpreters/IdSourceInterpreter.scala, ${BASE}/src/main/scala/postoffice/algebras/IdSourceAlgebra.scala), removed = Set(), changed = Set(${BASE}/src/main/scala/postoffice/interpreters/StateInterpreter.scala, ${BASE}/src/main/scala/postoffice/interpreters/ConsoleInterpreter.scala, ${BASE}/src/main/scala/postoffice/Main.scala, ${BASE}/src/main/scala/postoffice/Program.scala, ${BASE}/src/main/scala/postoffice/algebras/StateAlgebra.scala, ${BASE}/src/main/scala/postoffice/interpreters/Interpreters.scala, ${BASE}/src/main/scala/postoffice/interpreters/LogInterpreter.scala), unmodified = ...),Set(),Set(),API Changes: Set())
-[debug] 
-[debug] Initial source changes:
-[debug] 	removed: Set()
-[debug] 	added: Set(${BASE}/MacroApp (1).scala, ${BASE}/src/main/scala/postoffice/interpreters/IdSourceInterpreter.scala, ${BASE}/src/main/scala/postoffice/algebras/IdSourceAlgebra.scala)
-[debug] 	modified: Set(${BASE}/src/main/scala/postoffice/Main.scala, ${BASE}/src/main/scala/postoffice/interpreters/Interpreters.scala, ${BASE}/src/main/scala/postoffice/algebras/StateAlgebra.scala, ${BASE}/src/main/scala/postoffice/interpreters/StateInterpreter.scala, ${BASE}/src/main/scala/postoffice/Program.scala, ${BASE}/src/main/scala/postoffice/interpreters/LogInterpreter.scala, ${BASE}/src/main/scala/postoffice/interpreters/ConsoleInterpreter.scala)
-[debug] Invalidated products: Set()
-[debug] External API changes: API Changes: Set()
-[debug] Modified binary dependencies: Set()
-[debug] Initial directly invalidated classes: Set(postoffice.Main, postoffice.Program, postoffice.Interpreters, postoffice.Algebras, postoffice.algebras.StateAlgebra, postoffice.LogInterpreter, postoffice.StateInterpreter, postoffice.ConsoleInterpreter)
-[debug] Sources indirectly invalidated by:
-[debug] 	product: Set()
-[debug] 	binary dep: Set()
-[debug] 	external source: Set()
-[debug] All initially invalidated classes: Set(postoffice.Main, postoffice.Program, postoffice.Interpreters, postoffice.Algebras, postoffice.algebras.StateAlgebra, postoffice.LogInterpreter, postoffice.StateInterpreter, postoffice.ConsoleInterpreter)
-[debug] All initially invalidated sources:Set(${BASE}/src/main/scala/postoffice/interpreters/IdSourceInterpreter.scala, ${BASE}/src/main/scala/postoffice/Main.scala, ${BASE}/src/main/scala/postoffice/interpreters/Interpreters.scala, ${BASE}/MacroApp (1).scala, ${BASE}/src/main/scala/postoffice/algebras/StateAlgebra.scala, ${BASE}/src/main/scala/postoffice/interpreters/StateInterpreter.scala, ${BASE}/src/main/scala/postoffice/Program.scala, ${BASE}/src/main/scala/postoffice/algebras/IdSourceAlgebra.scala, ${BASE}/src/main/scala/postoffice/interpreters/LogInterpreter.scala, ${BASE}/src/main/scala/postoffice/interpreters/ConsoleInterpreter.scala)
-[debug] Initial set of included nodes: postoffice.Main, postoffice.Program, postoffice.Interpreters, postoffice.Algebras, postoffice.algebras.StateAlgebra, postoffice.LogInterpreter, postoffice.StateInterpreter, postoffice.ConsoleInterpreter
-[debug] Including postoffice.StateInterpreter by postoffice.algebras.StateAlgebra
-[debug] Recompiling all sources: number of invalidated sources > 50.0 percent of all sources
-[debug] compilation cycle 1
-[info] compiling 18 Scala sources to C:\Users\Axiliyz\Desktop\FP2S\2lr\target\scala-3.3.3\classes ...
-[debug] Returning already retrieved and compiled bridge: C:\Users\Axiliyz\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-sbt-bridge\3.3.3\scala3-sbt-bridge-3.3.3.jar.
-[debug] [zinc] Running cached compiler 23bb613b for Scala Compiler version 3.3.3
-[debug] [zinc] The Scala compiler is invoked with:
-[debug] 	-encoding
-[debug] 	UTF-8
-[debug] 	-bootclasspath
-[debug] 	C:\Users\Axiliyz\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-library_3\3.3.3\scala3-library_3-3.3.3.jar;C:\Users\Axiliyz\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.12\scala-library-2.13.12.jar
-[debug] 	-classpath
-[debug] 	C:\Users\Axiliyz\Desktop\FP2S\2lr\target\scala-3.3.3\classes;C:\Users\Axiliyz\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-core_3\2.10.0\cats-core_3-2.10.0.jar;C:\Users\Axiliyz\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-effect_3\3.5.4\cats-effect_3-3.5.4.jar;C:\Users\Axiliyz\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-kernel_3\2.10.0\cats-kernel_3-2.10.0.jar;C:\Users\Axiliyz\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-effect-kernel_3\3.5.4\cats-effect-kernel_3-3.5.4.jar;C:\Users\Axiliyz\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-effect-std_3\3.5.4\cats-effect-std_3-3.5.4.jar
-[debug] Scala compilation took 13.3889153 s
-[info] done compiling
+[debug] previous = Stamps for: 72 products, 20 sources, 2 libraries
+[debug] current source = Set(${BASE}/src/main/scala/postoffice/interpreters/ConfigInterpreter.scala, ${BASE}/src/main/scala/postoffice/interpreters/IdSourceInterpreter.scala, ${BASE}/src/main/scala/postoffice/interpreters/AppF.scala, ${BASE}/src/main/scala/postoffice/usecases/Tariff.scala, ${BASE}/src/main/scala/postoffice/Main.scala, ${BASE}/src/main/scala/postoffice/Monad.scala, ${BASE}/src/main/scala/postoffice/PostError.scala, ${BASE}/src/main/scala/postoffice/Domain.scala, ${BASE}/src/main/scala/postoffice/Menu.scala, ${BASE}/src/main/scala/postoffice/interpreters/Interpreters.scala, ${BASE}/src/main/scala/postoffice/algebras/StateAlgebra.scala, ${BASE}/src/main/scala/postoffice/interpreters/StateInterpreter.scala, ${BASE}/src/main/scala/postoffice/algebras/LogAlgebra.scala, ${BASE}/src/main/scala/postoffice/Program.scala, ${BASE}/src/main/scala/postoffice/interpreters/mock.scala, ${BASE}/src/main/scala/postoffice/algebras/IdSourceAlgebra.scala, ${BASE}/src/main/scala/postoffice/interpreters/LogInterpreter.scala, ${BASE}/src/main/scala/postoffice/interpreters/ConsoleInterpreter.scala, ${BASE}/src/main/scala/postoffice/algebras/ConfigAlgebra.scala, ${BASE}/src/main/scala/postoffice/algebras/ConsoleAlgebra.scala)
+[debug] > initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())
+[debug] No changes

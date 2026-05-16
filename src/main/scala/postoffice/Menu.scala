@@ -10,7 +10,7 @@ trait UserInteraction[F[_]]:
   def handleUserAnswer(answer: String): F[Unit]
   def userInteractionLoop: F[Unit]
 
-final case class MenuLeaf[F[_]](title: String, action: F[Unit]) extends MenuOption:
+final case class MenuLeaf[F[_]](title: String, action: () => F[Unit]) extends MenuOption:
   def show: String = title
 
 final case class MenuTreeNode[F[_]: Monad](
@@ -37,7 +37,7 @@ final case class MenuTreeNode[F[_]: Monad](
         s.toIntOption match
           case Some(n) if n >= 1 && n <= children.size =>
             children(n - 1) match
-              case leaf: MenuLeaf[F @unchecked]     => leaf.action >> userInteractionLoop
+              case leaf: MenuLeaf[F @unchecked]     => leaf.action() >> userInteractionLoop
               case node: MenuTreeNode[F @unchecked] => node.userInteractionLoop >> userInteractionLoop
           case _ =>
             console.putStrLn(s"Unknown command: '$s'") >> userInteractionLoop
