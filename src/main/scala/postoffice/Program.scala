@@ -10,6 +10,7 @@ object Program:
     state:   StateAlgebra[F],
     log:     LogAlgebra[F],
     console: ConsoleAlgebra[F],
+    id:      IdSourceAlgebra[F],
   )(using Monad[F]): F[Unit] =
     for
       sender    <- console.putStr("Sender name: ")        >> console.readLine
@@ -32,32 +33,33 @@ object Program:
     state:   StateAlgebra[F],
     log:     LogAlgebra[F],
     console: ConsoleAlgebra[F],
+    id:      IdSourceAlgebra[F],
   )(using Monad[F]): F[Unit] =
     for
-      cost     <- cfg.acceptanceCost(weightKg)
-      clsRule  <- cfg.packageClass(weightKg)
-      pkgCls    = clsRule._1
-      pkgRule   = clsRule._2
-      parcelId <- state.nextId
-      day      <- state.currentDay
-      parcel    = Parcel(parcelId, sender, recipient, weightKg, pkgCls, pkgRule, day)
-      _        <- state.acceptParcel(parcel, cost)
-      _        <- log.logTariffCalc(weightKg, cost)
-      _        <- log.logAcceptance(parcel, cost)
-      _        <- console.putStrLn(
-                    s"""
-                       |============== RECEIPT ================
-                       |Parcel #${parcelId.value}
-                       |Sender:       $sender
-                       |Recipient:    $recipient
-                       |Weight:       $weightKg kg
-                       |Class:        ${pkgCls.label}
-                       |Packaging:    ${pkgRule.description}
-                       |Cost:         ${"%.2f".format(cost)} rub.
-                       |Accepted day: $day
-                       |=======================================
-                       |""".stripMargin
-                  )
+      cost          <- cfg.acceptanceCost(weightKg)
+      pkgPair  <- cfg.packageClass(weightKg)
+      pkgCls    = pkgPair._1
+      pkgRule   = pkgPair._2
+      parcelId      <- id.nextId
+      day           <- state.currentDay
+      parcel         = Parcel(parcelId, sender, recipient, weightKg, pkgCls, pkgRule, day)
+      _             <- state.acceptParcel(parcel, cost)
+      _             <- log.logTariffCalc(weightKg, cost)
+      _             <- log.logAcceptance(parcel, cost)
+      _             <- console.putStrLn(
+                         s"""
+                            |============== RECEIPT ================
+                            |Parcel #${parcelId.value}
+                            |Sender:       $sender
+                            |Recipient:    $recipient
+                            |Weight:       $weightKg kg
+                            |Class:        ${pkgCls.label}
+                            |Packaging:    ${pkgRule.description}
+                            |Cost:         ${"%.2f".format(cost)} rub.
+                            |Accepted day: $day
+                            |=======================================
+                            |""".stripMargin
+                       )
     yield ()
 
   def pickupFlow[F[_]](using
@@ -145,6 +147,7 @@ object Program:
     state:   StateAlgebra[F],
     log:     LogAlgebra[F],
     console: ConsoleAlgebra[F],
+    id:      IdSourceAlgebra[F],
   )(using Monad[F]): MenuTreeNode[F] =
     MenuTreeNode[F](
       titleF = statusTitle[F],
@@ -161,5 +164,6 @@ object Program:
     state:   StateAlgebra[F],
     log:     LogAlgebra[F],
     console: ConsoleAlgebra[F],
+    id:      IdSourceAlgebra[F],
   )(using Monad[F]): F[Unit] =
     buildMenu[F].userInteractionLoop

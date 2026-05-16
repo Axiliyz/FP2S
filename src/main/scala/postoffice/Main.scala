@@ -9,6 +9,6 @@ object Main extends IOApp.Simple:
     System.setOut(PrintStream(System.out, true, "UTF-8"))
     System.setErr(PrintStream(System.err, true, "UTF-8"))
 
-    val ioAlg = Interpreters.makeIO(PostConfig.default)
-    Program.menu[AppF](using ioAlg.cfg, ioAlg.state, ioAlg.log, ioAlg.console)
+    val alg = Interpreters.make(PostConfig.default)
+    Program.menu[AppF](using alg.cfg, alg.state, alg.log, alg.console, alg.id)
       .runA(PostState.empty)
