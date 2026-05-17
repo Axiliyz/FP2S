@@ -44,11 +44,12 @@ case class Parcel(
   pkgClass: PackageClass,
   packaging: PackagingRule,
   acceptedDay: Int,
-)
-
-extension (p: Parcel)
+):
   def storedDays(currentDay: Int): Int = currentDay - p.acceptedDay
   def summary: String = s"#${p.id.value}: ${p.sender} -> ${p.recipient}, ${p.weightKg} kg (day ${p.acceptedDay})"
+
+extension (p: Parcel)
+
 
 case class PostState(
   parcels: Map[ParcelId, Parcel],

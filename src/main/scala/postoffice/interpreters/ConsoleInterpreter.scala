@@ -8,6 +8,3 @@ object ConsoleInterpreter extends ConsoleAlgebra[AppF]:
 
   def putStr(msg: String): AppF[Unit] =
     s => {print(msg); (s, ())}
-
-  def putStrLn(msg: String): AppF[Unit] =
-    putStr(msg + "\n")
